@@ -9,15 +9,12 @@ int main(){
 
     //starting for loop;
     int first=0,second=1;
-    for(i=1;i<=n;i++){
+   for(i=1;i<=n;i++){
         //logic
-     int result=first+second;
-     second=first;
-     first=result;
-     printf("%d\t",result);
-     
+         printf("%d\t",first);
+        int next = first+second;
+        first=second;
+        second = next;
     }
-  
     return 0;
-    
 }
